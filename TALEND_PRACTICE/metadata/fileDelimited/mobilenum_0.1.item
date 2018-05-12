@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_7ztGkDWnEeiqxaw8ravS7g" name="mobilenum" dataPackage="_7ztGkTWnEeiqxaw8ravS7g" Server="Localhost 127.0.0.1" FilePath="C:/Personal Stuff/Talend/files for practice/files/mobilenums.txt" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_7ztGkTWnEeiqxaw8ravS7g" name="default" dataManager="_7ztGkDWnEeiqxaw8ravS7g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_7ztGkjWnEeiqxaw8ravS7g" id="_tfI0wDWnEeiqxaw8ravS7g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7ztGkzWnEeiqxaw8ravS7g" label="empno" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7ztGlDWnEeiqxaw8ravS7g" label="empname" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7ztGlTWnEeiqxaw8ravS7g" label="mobnum" length="11" talendType="id_Long" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7ztGljWnEeiqxaw8ravS7g" label="emailid" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_rcELgFXtEeiSroWfxgomuA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_rcELgVXtEeiSroWfxgomuA" comment="" name="orac_db_host" prompt="orac_db_host?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rcELglXtEeiSroWfxgomuA" comment="" name="orac_db_port" prompt="orac_db_port?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_rcELg1XtEeiSroWfxgomuA" comment="" name="orac_db" prompt="orac_db?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rcELhFXtEeiSroWfxgomuA" comment="" name="orac_db_uid" prompt="orac_db_uid?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rcELhVXtEeiSroWfxgomuA" comment="" name="orac_db_pwd" prompt="orac_db_pwd?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_rcELhlXtEeiSroWfxgomuA" comment="" name="filenm" prompt="filenm?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

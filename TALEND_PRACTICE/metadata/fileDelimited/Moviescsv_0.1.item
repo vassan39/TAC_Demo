@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_GYsAMS9xEeiM1_oqH_wfIQ" name="Moviescsv" dataPackage="_GYsAMi9xEeiM1_oqH_wfIQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/Vatsava/Downloads/movies.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" HeaderValue="0" splitRecord="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_GYsAMi9xEeiM1_oqH_wfIQ" name="default" dataManager="_GYsAMS9xEeiM1_oqH_wfIQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_GYsAMy9xEeiM1_oqH_wfIQ" id="_QdlCAC9wEeiM1_oqH_wfIQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GYsANC9xEeiM1_oqH_wfIQ" label="Top" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GYsANS9xEeiM1_oqH_wfIQ" label="Movie_Title" length="48" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GYsANi9xEeiM1_oqH_wfIQ" label="Release_Year" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GYsANy9xEeiM1_oqH_wfIQ" label="Site" length="104" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GYsAOC9xEeiM1_oqH_wfIQ" label="Rotten_tomato" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

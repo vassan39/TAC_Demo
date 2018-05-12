@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_Yn_W8Ux1EeiwAssbElB5ZA" name="clothing_size" dataPackage="_Yn_W8kx1EeiwAssbElB5ZA" Server="Localhost 127.0.0.1" FilePath="C:/Personal Stuff/Talend/Talend Capstone project/Final/Lookup Files/Clothing Size.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Yn_W8kx1EeiwAssbElB5ZA" name="default" dataManager="_Yn_W8Ux1EeiwAssbElB5ZA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Yn_W80x1EeiwAssbElB5ZA" id="_MmmBoEx1EeiwAssbElB5ZA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Yn_W9Ex1EeiwAssbElB5ZA" label="USA" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Yn_W9Ux1EeiwAssbElB5ZA" label="Europe" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_d9dzYExgEeiwAssbElB5ZA" name="repository.metadataGenericSchema" dataPackage="_d9dzYUxgEeiwAssbElB5ZA"/>
+  <TalendMetadata:GenericPackage xmi:id="_d9dzYUxgEeiwAssbElB5ZA" name="repository.metadataGenericSchema" dataManager="_d9dzYExgEeiwAssbElB5ZA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_d9dzYkxgEeiwAssbElB5ZA" id="_LRdAMExgEeiwAssbElB5ZA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_d9dzY0xgEeiwAssbElB5ZA" name="Size" label="Size" length="5" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_d9dzZExgEeiwAssbElB5ZA" name="Product_ID" label="Product_ID" length="10" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_d9dzZUxgEeiwAssbElB5ZA" name="Price" label="Price" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_d9dzZkxgEeiwAssbElB5ZA" name="Color" label="Color" length="10" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_d9dzZ0xgEeiwAssbElB5ZA" name="Gender" label="Gender" length="10" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

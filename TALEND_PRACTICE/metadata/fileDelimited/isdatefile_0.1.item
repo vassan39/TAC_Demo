@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_DsSMETcLEeiqxaw8ravS7g" name="isdatefile" dataPackage="_DsSMEjcLEeiqxaw8ravS7g" Server="Localhost 127.0.0.1" FilePath="C:/Personal Stuff/Talend/files for practice/files/date_isdate.txt" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_DsSMEjcLEeiqxaw8ravS7g" name="default" dataManager="_DsSMETcLEeiqxaw8ravS7g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_DsSMEzcLEeiqxaw8ravS7g" id="_5iBXgDcKEeiqxaw8ravS7g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DsSMFDcLEeiqxaw8ravS7g" label="eno" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DsSMFTcLEeiqxaw8ravS7g" label="ename" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DsSMFjcLEeiqxaw8ravS7g" label="sal" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DsSMFzcLEeiqxaw8ravS7g" label="joindate" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

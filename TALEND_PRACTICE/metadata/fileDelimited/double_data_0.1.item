@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_Qh2tID5aEeiqtvyPiWIScQ" name="double_data" dataPackage="_Qh2tIT5aEeiqtvyPiWIScQ" Server="Localhost 127.0.0.1" FilePath="C:/Personal Stuff/Talend/files for practice/files/double_data.txt" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Qh2tIT5aEeiqtvyPiWIScQ" name="default" dataManager="_Qh2tID5aEeiqtvyPiWIScQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Qh2tIj5aEeiqtvyPiWIScQ" id="_EvZLsD5aEeiqtvyPiWIScQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qh2tIz5aEeiqtvyPiWIScQ" label="point_latitude" length="10" precision="7" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qh3UMD5aEeiqtvyPiWIScQ" label="point_longitude" length="10" precision="7" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Qh3UMT5aEeiqtvyPiWIScQ" label="line" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
