@@ -308,7 +308,7 @@
     <elementParameter field="TEXT" name="CC" value=""/>
     <elementParameter field="TEXT" name="BCC" value=""/>
     <elementParameter field="TEXT" name="SUBJECT" value="&quot;Kate Central Sales data - &quot;+TalendDate.getDate(&quot;CCYY-MM-DD&quot;)"/>
-    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Hello;&#xD;&#xA;&#xD;&#xA;Please find attached sales data for &quot;+TalendDate.getDate(&quot;CCYY-MM-DD&quot;)+&quot;.&quot;+&quot;&#xD;&#xA;&#xD;&#xA;Number of sales transactions happened to be - &quot;+((Integer)globalMap.get(&quot;tFileOutputDelimited_1_NB_LINE&quot;))+&quot;&#xD;&#xA;&#xD;&#xA;Thanks,&#xD;&#xA;Trilogy Team&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Hello;&#xD;&#xA;&#xD;&#xA;Please find attached sales data for &quot;+TalendDate.getDate(&quot;CCYY-MM-DD&quot;)+&quot;.&quot;+&quot;&#xD;&#xA;&#xD;&#xA;Number of sales transactions happened to be - &quot;+((Integer)globalMap.get(&quot;tFileOutputDelimited_1_NB_LINE&quot;))+&quot;&#xD;&#xA;&#xD;&#xA;Thanks,&#xD;&#xA;TrilogyOne Team&quot;"/>
     <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
     <elementParameter field="TABLE" name="ATTACHMENTS">
       <elementValue elementRef="FILE" value="((String)globalMap.get(&quot;tFileOutputDelimited_1_FILE_NAME&quot;))"/>
