@@ -225,7 +225,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Current_Day_Sales" expressionFilter="row1.UPD_TIMESTMP == TalendDate.getDate(&quot;DD-MM-CCYY&quot;)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="Current_Day_Sales" expressionFilter="TalendDate.formatDate(&quot;dd-MM-yyyy&quot;,row1.UPD_TIMESTMP) == TalendDate.getDate(&quot;DD-MM-CCYY&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="PRODUCT_ID" expression="row1.PRODUCT_ID " type="id_String" nullable="true"/>
         <mapperTableEntries name="PRD_SIZE" expression="row1.PRD_SIZE " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="PRD_PRICE" expression="row1.PRD_PRICE " type="id_String" nullable="true"/>
