@@ -306,7 +306,7 @@
         <mapperTableEntries name="Empname" expression="StringHandling.LEFT(row2.Combine,StringHandling.INDEX(row2.Combine,&quot;-&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="sal" expression="row2.sal " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="HRA" expression="row2.HRA " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Deptno" expression="StringHandling.RIGHT(row2.Combine,StringHandling.INDEX(row2.Combine,&quot;-&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Deptno" expression="StringHandling.RIGHT(row2.Combine,(StringHandling.LEN(row2.Combine) - StringHandling.INDEX(row2.Combine,&quot;-&quot;)-1)) " type="id_String" nullable="true"/>
         <mapperTableEntries name="deptname" expression="row2.deptname " type="id_String" nullable="true"/>
         <mapperTableEntries name="loc" expression="row2.loc " type="id_String" nullable="true"/>
       </outputTables>
