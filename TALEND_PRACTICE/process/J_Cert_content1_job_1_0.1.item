@@ -228,7 +228,7 @@
         <mapperTableEntries name="HRA" expression="row1.HRA " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="deptname" expression="row1.deptname " type="id_String" nullable="true"/>
         <mapperTableEntries name="loc" expression="row1.loc " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Combine" expression="row1.empname+&quot;-&quot;+row1.deptno " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Combine" expression="StringHandling.UPCASE(row1.empname)+&quot;-&quot;+row1.deptno " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="empno" type="id_Integer" nullable="true"/>
@@ -299,7 +299,7 @@
       <column comment="" key="false" length="3" name="loc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Split">
         <mapperTableEntries name="empno" expression="row2.empno " type="id_Integer" nullable="true"/>
