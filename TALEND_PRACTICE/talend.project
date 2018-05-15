@@ -751,6 +751,7 @@
       <relatedItems xmi:id="_tVkrlFXtEeiSroWfxgomuA" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_tVkrlVXtEeiSroWfxgomuA" id="_qgvc0DjPEeiqxaw8ravS7g - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_tVkrllXtEeiSroWfxgomuA" id="_1ssX4DjPEeiqxaw8ravS7g - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_GxMuEFgGEeiSroWfxgomuA" id="SQLike" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_tVkrl1XtEeiSroWfxgomuA">
       <baseItem xmi:id="_tVkrmFXtEeiSroWfxgomuA" id="_5rE_YExfEeiwAssbElB5ZA" version="0.1" type="job"/>
