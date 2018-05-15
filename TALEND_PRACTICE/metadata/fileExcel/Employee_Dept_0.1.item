@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_2e5J8FgVEeiSroWfxgomuA" name="Employee_Dept" dataPackage="_2e5J8VgVEeiSroWfxgomuA" Server="Localhost 127.0.0.1" FilePath="C:/Personal Stuff/Talend/files for practice/files/lookup/Employee_DEPT_content2.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="DEPT" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="DEPT:w&#xA;" generationMode="EVENT_MODE">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_2e5J8VgVEeiSroWfxgomuA" name="default" dataManager="_2e5J8FgVEeiSroWfxgomuA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_2e5J8lgVEeiSroWfxgomuA" id="_ewKDwFgVEeiSroWfxgomuA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2e5J81gVEeiSroWfxgomuA" label="DEPTNO" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2e5J9FgVEeiSroWfxgomuA" label="DNAME" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2e5J9VgVEeiSroWfxgomuA" label="LOC" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
