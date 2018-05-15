@@ -294,7 +294,7 @@
       <column comment="" key="false" length="20" name="Empname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="sal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="HRA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Deptno" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Deptno" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="deptname" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="loc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -306,7 +306,7 @@
         <mapperTableEntries name="Empname" expression="StringHandling.LEFT(row2.Combine,StringHandling.INDEX(row2.Combine,&quot;-&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="sal" expression="row2.sal " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="HRA" expression="row2.HRA " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Deptno" expression="StringHandling.RIGHT(row2.Combine,StringHandling.INDEX(row2.Combine,&quot;-&quot;))" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Deptno" expression="StringHandling.RIGHT(row2.Combine,StringHandling.INDEX(row2.Combine,&quot;-&quot;))" type="id_String" nullable="true"/>
         <mapperTableEntries name="deptname" expression="row2.deptname " type="id_String" nullable="true"/>
         <mapperTableEntries name="loc" expression="row2.loc " type="id_String" nullable="true"/>
       </outputTables>
@@ -357,7 +357,7 @@
       <column comment="" key="false" length="20" name="Empname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="sal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="HRA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Deptno" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Deptno" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="deptname" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="loc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
