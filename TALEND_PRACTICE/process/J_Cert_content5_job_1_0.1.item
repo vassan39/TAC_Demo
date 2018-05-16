@@ -550,7 +550,7 @@
     <elementParameter field="TEXT" name="CC" value=""/>
     <elementParameter field="TEXT" name="BCC" value=""/>
     <elementParameter field="TEXT" name="SUBJECT" value="&quot;Filtering data - Error&quot;"/>
-    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Hello;&#xD;&#xA;&#xD;&#xA;Please correct the Employee name, it shouldn't be Null and 3rd letter shouldn't be 'v'.&#xD;&#xA;&#xD;&#xA;Thanks,&#xD;&#xA;TrilogyOne Team&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Hello;&#xD;&#xA;&#xD;&#xA;Please correct the Employee name, it shouldn't be Null and 3rd letter shouldn't be 'v'.&#xD;&#xA;&#xD;&#xA;Refer to the attached file for error records.&#xD;&#xA;&#xD;&#xA;Thanks,&#xD;&#xA;TrilogyOne Team&quot;"/>
     <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
     <elementParameter field="TABLE" name="ATTACHMENTS">
       <elementValue elementRef="FILE" value="((String)globalMap.get(&quot;tFileOutputDelimited_5_FILE_NAME&quot;))"/>
