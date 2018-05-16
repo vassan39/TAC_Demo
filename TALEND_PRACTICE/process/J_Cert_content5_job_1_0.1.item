@@ -310,7 +310,7 @@
         <mapperTableEntries name="LOC" expression="row1.LOC " type="id_String" nullable="true"/>
         <mapperTableEntries name="JOIN_DATE" expression="row1.JOIN_DATE " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Errors" expressionFilter="!row1.LOC.equals(&quot;che&quot;,&quot;hyd&quot;,&quot;del&quot;,&quot;pune&quot;) &amp;&amp;&#xD;&#xA;(Relational.ISNULL(row1.EMPNAME) &amp;&amp; StringHandling.LEN(row1.EMPNAME) &lt;= 0)&amp;&amp;&#xD;&#xA;StringHandling.RIGHT(StringHandling.LEFT(row1.EMPNAME,3),1).equals(&quot;v&quot;)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="Errors" expressionFilter="!row1.LOC.equals(&quot;che&quot;,&quot;hyd&quot;,&quot;del&quot;,&quot;pune&quot;) ||&#xD;&#xA;(Relational.ISNULL(row1.EMPNAME) || StringHandling.LEN(row1.EMPNAME) &lt;= 0)||&#xD;&#xA;StringHandling.RIGHT(StringHandling.LEFT(row1.EMPNAME,3),1).equals(&quot;v&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="EMPNO" expression="row1.EMPNO " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="EMPNAME" expression="row1.EMPNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="SAL" expression="row1.SAL " type="id_Integer" nullable="true"/>
