@@ -269,7 +269,7 @@
         <mapperTableEntries name="DNAME" expression="row2.DNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="LOC" expression="row2.LOC " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Update" expressionFilter="!Relational.ISNULL(row3.EMPNO) &amp;&amp; &#xA;(!row1.empname.equals(row3.EMPNAME) || !row1.sal.equals(row3.SAL) || !row1.HRA.equals(row3.HRA))" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="Update" expressionFilter="!Relational.ISNULL(row3.EMPNO) &amp;&amp; &#xA;(!row1.empname.equals(row3.EMPNAME) || !row1.sal.equals(row3.SAL) || !row1.HRA.equals(row3.HRA) || !row2.DNAME.equals(row3.DNAME))" activateExpressionFilter="true">
         <mapperTableEntries name="EMPNAME" expression="row1.empname " type="id_String" nullable="true"/>
         <mapperTableEntries name="SAL" expression="row1.sal " type="id_String" nullable="true"/>
         <mapperTableEntries name="HRA" expression="row1.HRA " type="id_String" nullable="true"/>
