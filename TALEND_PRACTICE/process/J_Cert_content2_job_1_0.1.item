@@ -285,7 +285,7 @@
         <mapperTableEntries name="HRA" type="id_String" nullable="true"/>
         <mapperTableEntries name="deptno" type="id_BigDecimal" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="DEPTNO" expression="row1.deptno " type="id_BigDecimal" nullable="true" operator="="/>
         <mapperTableEntries name="DNAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="LOC" type="id_String" nullable="true"/>
