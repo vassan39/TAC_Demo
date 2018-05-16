@@ -880,6 +880,7 @@
       <relatedItems xmi:id="_ECdbbVjAEeiSroWfxgomuA" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ECdbbljAEeiSroWfxgomuA" id="_2e4i4FgVEeiSroWfxgomuA - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_ECdbb1jAEeiSroWfxgomuA" id="_YY1VUFgVEeiSroWfxgomuA - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PZTIcFkbEeiSroWfxgomuA" id="_0SjeEC9sEeiM1_oqH_wfIQ" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_Q8BAYFjDEeiSroWfxgomuA">
       <baseItem xmi:id="_Q8BAYVjDEeiSroWfxgomuA" id="_DCsngFjAEeiSroWfxgomuA" version="0.1" type="job"/>
