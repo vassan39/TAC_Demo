@@ -232,7 +232,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Insert" expressionFilter="!row1.deptno.equals(row3.DEPTNO)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="Insert" expressionFilter="Relational.ISNULL(row3.DEPTNO) &amp;&amp; !Relational.ISNULL(row2.DEPTNO)" activateExpressionFilter="true">
         <mapperTableEntries name="empno" expression="row1.empno " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="empname" expression="row1.empname " type="id_String" nullable="true"/>
         <mapperTableEntries name="sal" expression="row1.sal " type="id_String" nullable="true"/>
