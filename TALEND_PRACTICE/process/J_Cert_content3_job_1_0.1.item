@@ -260,7 +260,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
-      <outputTables sizeState="INTERMEDIATE" name="Hyd" expressionFilter="row1.LOC.equals(&quot;hyd&quot;) &amp;&amp;&#xA;(!Relational.ISNULL(row1.EMPNAME) || !row1.EMPNAME.equals(&quot; &quot;))&amp;&amp;&#xD;&#xA;!StringHandling.RIGHT(StringHandling.LEFT(row1.EMPNAME,3),1).equals(&quot;v&quot;)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="Hyd" expressionFilter="row1.LOC.equals(&quot;hyd&quot;) &amp;&amp;&#xA;(!Relational.ISNULL(row1.EMPNAME) || row1.EMPNAME > &quot; &quot;)&amp;&amp;&#xD;&#xA;!StringHandling.RIGHT(StringHandling.LEFT(row1.EMPNAME,3),1).equals(&quot;v&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="EMPNO" expression="row1.EMPNO " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="EMPNAME" expression="row1.EMPNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="SAL" expression="row1.SAL " type="id_Integer" nullable="true"/>
