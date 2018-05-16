@@ -269,7 +269,7 @@
         <mapperTableEntries name="DNAME" expression="row2.DNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="LOC" expression="row2.LOC " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Rejects" activateCondensedTool="true" rejectInnerJoin="true">
+      <outputTables sizeState="INTERMEDIATE" name="Rejects" activateCondensedTool="true" reject="true">
         <mapperTableEntries name="EMPNO" expression="row3.EMPNO " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="EMPNAME" expression="row3.EMPNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="SAL" expression="row3.SAL " type="id_String" nullable="true"/>
@@ -285,7 +285,7 @@
         <mapperTableEntries name="HRA" type="id_String" nullable="true"/>
         <mapperTableEntries name="deptno" type="id_BigDecimal" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="DEPTNO" expression="row1.deptno " type="id_BigDecimal" nullable="true" operator="="/>
         <mapperTableEntries name="DNAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="LOC" type="id_String" nullable="true"/>
