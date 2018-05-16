@@ -207,6 +207,9 @@
       <column comment="" key="false" length="8" name="LOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="Update">
+      <column comment="" key="true" length="38" name="EMPNO" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="7" name="EMPNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -214,9 +217,6 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="5" name="HRA" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="38" name="DEPTNO" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="DNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
@@ -262,10 +262,10 @@
         <mapperTableEntries name="LOC" expression="row2.LOC " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="Update" expressionFilter="!Relational.ISNULL(row3.EMPNO) &amp;&amp; &#xA;(!row1.empname.equals(row3.EMPNAME) || !row1.sal.equals(row3.SAL) || !row1.HRA.equals(row3.HRA) || !row2.DNAME.equals(row3.DNAME) ||&#xA;!row2.LOC.equals(row3.LOC))" activateExpressionFilter="true">
+        <mapperTableEntries name="EMPNO" expression="row1.empno " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="EMPNAME" expression="row1.empname " type="id_String" nullable="true"/>
         <mapperTableEntries name="SAL" expression="row1.sal " type="id_String" nullable="true"/>
         <mapperTableEntries name="HRA" expression="row1.HRA " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DEPTNO" expression="row3.DEPTNO " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="DNAME" expression="row2.DNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="LOC" expression="row2.LOC " type="id_String" nullable="true"/>
       </outputTables>
@@ -503,13 +503,13 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="EMPNO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="EMPNAME"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SAL"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="HRA"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DEPTNO"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DNAME"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -520,6 +520,9 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="true" length="38" name="EMPNO" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="7" name="EMPNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -527,9 +530,6 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="5" name="HRA" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="38" name="DEPTNO" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="DNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
@@ -707,6 +707,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Insert" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Update" lineStyle="0" metaname="Update" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tLogRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="EMPNO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Update" show="false"/>
   </connection>
