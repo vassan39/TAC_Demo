@@ -260,7 +260,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
-      <outputTables sizeState="INTERMEDIATE" name="Hyd" expressionFilter="row1.LOC.equals(&quot;hyd&quot;) &amp;&amp;&#xA;(!Relational.ISNULL(row1.EMPNAME) || StringHandling.LEN(row1.EMPNAME) > 0)&amp;&amp;&#xD;&#xA;!StringHandling.RIGHT(StringHandling.LEFT(row1.EMPNAME,3),1).equals(&quot;v&quot;)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="Hyd" expressionFilter="row1.LOC.equals(&quot;hyd&quot;) &amp;&amp;&#xA;(!Relational.ISNULL(row1.EMPNAME) &amp;&amp; StringHandling.LEN(row1.EMPNAME) > 0)&amp;&amp;&#xD;&#xA;!StringHandling.RIGHT(StringHandling.LEFT(row1.EMPNAME,3),1).equals(&quot;v&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="EMPNO" expression="row1.EMPNO " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="EMPNAME" expression="row1.EMPNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="SAL" expression="row1.SAL " type="id_Integer" nullable="true"/>
@@ -497,6 +497,32 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Hyd" lineStyle="0" metaname="Hyd" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="EMPNO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EMPNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SAL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HRA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DEPTNO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DEPTNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LOC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="JOIN_DATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Hyd" show="false"/>
   </connection>
