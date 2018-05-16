@@ -247,7 +247,7 @@
         <mapperTableEntries name="DNAME" expression="row2.DNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="LOC" expression="row2.LOC " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Rejects" activateCondensedTool="true" rejectInnerJoin="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Rejects" activateCondensedTool="true" reject="true" rejectInnerJoin="true"/>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="empno" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="empname" type="id_String" nullable="true"/>
