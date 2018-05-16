@@ -206,7 +206,7 @@
       <column comment="" key="false" length="10" name="DNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="LOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata name="Updat">
+    <metadata connector="FLOW" name="Update">
       <column comment="" key="false" length="38" name="EMPNO" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -241,7 +241,7 @@
         <mapperTableEntries name="DNAME" expression="row2.DNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="LOC" expression="row2.LOC " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Updat" expressionFilter="row1.deptno = row3.DEPTNO &amp;&amp; &#xA;(row1.empno =! row3.EMPNO || !row1.empname.equals(row3.EMPNAME) || !row1.sal.equals(row3.SAL) || !row1.HRA.equals(row3.HRA) || !row3.DNAME.equals(row2.DNAME) || !row3.LOC.equlas(row2.LOC))" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="Update" expressionFilter="row1.deptno = row3.DEPTNO &amp;&amp; &#xA;(row1.empno =! row3.EMPNO || !row1.empname.equals(row3.EMPNAME) || !row1.sal.equals(row3.SAL) || !row1.HRA.equals(row3.HRA) || !row3.DNAME.equals(row2.DNAME) || !row3.LOC.equlas(row2.LOC))" activateExpressionFilter="true">
         <mapperTableEntries name="EMPNO" expression="row1.empno " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="EMPNAME" expression="row1.empname " type="id_String" nullable="true"/>
         <mapperTableEntries name="SAL" expression="row1.sal " type="id_String" nullable="true"/>
@@ -339,7 +339,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="320">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -438,6 +438,62 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="EMPLOYEE_DEPT" name="tOracleInput_1">
+      <column comment="" key="false" length="38" name="EMPNO" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="EMPNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="SAL" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="HRA" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="38" name="DEPTNO" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="LOC" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="EMPNO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EMPNAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HRA"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPTNO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DNAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
       <column comment="" key="false" length="38" name="EMPNO" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -567,9 +623,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Insert" lineStyle="0" metaname="Insert" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+  <connection connectorName="FLOW" label="Insert" lineStyle="0" metaname="Insert" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Insert" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Update" lineStyle="0" metaname="Update" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Update" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
