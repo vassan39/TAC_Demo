@@ -268,7 +268,7 @@
       <column comment="" key="false" length="10" name="JOIN_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="Hyd" expressionFilter="row1.LOC.equals(&quot;hyd&quot;) &amp;&amp;&#xA;(!Relational.ISNULL(row1.EMPNAME) &amp;&amp; StringHandling.LEN(row1.EMPNAME) > 0)&amp;&amp;&#xD;&#xA;!StringHandling.RIGHT(StringHandling.LEFT(row1.EMPNAME,3),1).equals(&quot;v&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="EMPNO" expression="row1.EMPNO " type="id_Integer" nullable="true"/>
@@ -556,7 +556,7 @@
       <elementValue elementRef="key" value="&quot;Error_flname&quot;"/>
       <elementValue elementRef="value" value="((String)globalMap.get(&quot;tFileOutputDelimited_5_FILE_NAME&quot;))"/>
       <elementValue elementRef="key" value="&quot;Error_records&quot;"/>
-      <elementValue elementRef="value" value="((Integer)globalMap.get(&quot;tFileOutputDelimited_5_NB_LINE&quot;))"/>
+      <elementValue elementRef="value" value="String.valueOf(((Integer)globalMap.get(&quot;tFileOutputDelimited_5_NB_LINE&quot;)))"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
