@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="subjob_context" prompt="subjob_context?" promptNeeded="false" type="id_Object" value=""/>
-  </context>
+  <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
@@ -145,7 +143,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#xD;&#xA;//&#xD;&#xA;// multiply by 2 the row identifier&#xD;&#xA;// output_row.id = input_row.id * 2;&#xD;&#xA;//&#xD;&#xA;// lowercase the name&#xD;&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xA;System.out.println(&quot;param=&quot; + ((Map&lt;String, String>)context.SUBJOB_CONTEXT).get(&quot;Error_flname&quot;));&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#xD;&#xA;//&#xD;&#xA;// multiply by 2 the row identifier&#xD;&#xA;// output_row.id = input_row.id * 2;&#xD;&#xA;//&#xD;&#xA;// lowercase the name&#xD;&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xA;System.out.println(&quot;param=&quot; + ((Map&lt;String, String>)context.subjob_context).get(&quot;Error_flname&quot;));&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import java.util.Map;&#xA;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1"/>
