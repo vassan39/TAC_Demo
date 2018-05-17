@@ -144,7 +144,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Error_flname=&quot; + ((Map&lt;String, String>)context.subjob_context).get(&quot;Error_flname&quot;));&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Error_flname=&quot; + ((Map&lt;String, String>)context.subjob_context).get(&quot;Error_flname&quot;));&#xA;System.out.println(&quot;Error_records=&quot; + ((Map&lt;String, String>)context.subjob_context).get(&quot;Error_records&quot;));&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import java.util.Map;&#xA;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -160,7 +160,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSendMail_1">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Map&lt;String, String>)context.subjob_context).get(&quot;Error_records&quot;) > 0 "/>
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Map&lt;String, int>)context.subjob_context).get(&quot;Error_records&quot;) > 0"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
   </connection>
   <subjob>
