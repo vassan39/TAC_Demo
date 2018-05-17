@@ -623,7 +623,7 @@
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="context.Error_flname = new HashMap&lt;String, String>();&#xA;&#xA;((Map&lt;String, String>)context.Error_flname).put(&quot;param&quot;, ((String)globalMap.get(&quot;tFileOutputDelimited_5_FILE_NAME&quot;)));&#xA;&#xA;System.out.println(context.Error_flname);&#xA;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;//import java,util.Map;&#xA;//import java.util.HashMap;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;//import java.util.Map;&#xA;//import java.util.HashMap;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
   </node>
