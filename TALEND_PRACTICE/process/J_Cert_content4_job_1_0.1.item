@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="Error_flname" prompt="Error_flname?" promptNeeded="false" type="id_Object" value=""/>
-    <contextParameter comment="" name="Error_records" prompt="Error_records?" promptNeeded="false" type="id_Object" value=""/>
+    <contextParameter comment="" name="subjob_context" prompt="subjob_context?" promptNeeded="false" type="id_Object" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -595,7 +594,7 @@
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(context.Error_flname);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(context.subjob_context);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -622,7 +621,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="context.Error_flname = new HashMap&lt;String, String>();&#xA;&#xA;((Map&lt;String, String>)context.Error_flname).put(&quot;param&quot;, ((String)globalMap.get(&quot;tFileOutputDelimited_5_FILE_NAME&quot;)));&#xA;&#xA;System.out.println(context.Error_flname);&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.subjob_context = new HashMap&lt;String, String>();&#xA;&#xA;((Map&lt;String, String>)context.subjob_context).put(&quot;Error_flname&quot;, ((String)globalMap.get(&quot;tFileOutputDelimited_5_FILE_NAME&quot;)));&#xA;&#xA;((Map&lt;String, String>)context.subjob_context).put(&quot;Error_records&quot;, ((Integer)globalMap.get(&quot;tFileOutputDelimited_5_NB_LINE&quot;)));&#xA;&#xA;System.out.println(context.subjob_context);&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import java.util.Map;&#xA;import java.util.HashMap;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
