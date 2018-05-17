@@ -553,7 +553,7 @@
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
     <elementParameter field="TABLE" name="INTABLE">
-      <elementValue elementRef="key" value="Error_File_nm"/>
+      <elementValue elementRef="key" value="Error_flname"/>
       <elementValue elementRef="value" value="((String)globalMap.get(&quot;tFileOutputDelimited_5_FILE_NAME&quot;))"/>
       <elementValue elementRef="key" value="Error_records"/>
       <elementValue elementRef="value" value="((Integer)globalMap.get(&quot;tFileOutputDelimited_5_NB_LINE&quot;))"/>
@@ -565,7 +565,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFixedFlowInput_1">
       <column comment="" key="false" length="255" name="key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="value" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="value" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="255" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="128">
