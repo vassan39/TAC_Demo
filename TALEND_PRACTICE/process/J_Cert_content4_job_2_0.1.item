@@ -160,7 +160,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSendMail_1">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Map&lt;String, int>)context.subjob_context).get(&quot;Error_records&quot;) > 0"/>
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Map&lt;String, String>)context.subjob_context).get(&quot;Error_records&quot;)>0"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
   </connection>
   <subjob>
