@@ -619,7 +619,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1408" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.print(&quot;-----------------------------------------------&quot;);&#xA;System.out.print(&quot;------------PARENT JOB after exec--------------&quot;);&#xA;&#xA;&#xA;System.out.println(&quot;Error_records=&quot; + ((Map&lt;String, String>)context.subjob_context).get(&quot;Error_records&quot;));&#xA;&#xA;System.out.println(&quot;Error_flname=&quot; + ((Map&lt;String, String>)context.subjob_context).get(&quot;Error_flname&quot;));&#xA;System.out.print(&quot;-----------------------------------------------&quot;);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.print(&quot;-----------------------------------------------\n&quot;);&#xA;System.out.print(&quot;------------PARENT JOB after exec--------------\n&quot;);&#xA;&#xA;&#xA;System.out.println(&quot;Error_records=&quot; + ((Map&lt;String, String>)context.subjob_context).get(&quot;Error_records&quot;));&#xA;&#xA;System.out.println(&quot;Error_flname=&quot; + ((Map&lt;String, String>)context.subjob_context).get(&quot;Error_flname&quot;));&#xA;System.out.print(&quot;-----------------------------------------------\n&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import java.util.Map;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
