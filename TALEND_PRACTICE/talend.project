@@ -914,7 +914,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_LqhEwFl3EeiSroWfxgomuA">
       <baseItem xmi:id="_LqhEwVl3EeiSroWfxgomuA" id="_LphmQFl3EeiSroWfxgomuA" version="0.1" type="job"/>
-      <relatedItems xmi:id="_LqhEwll3EeiSroWfxgomuA" id="_8xNl4FjAEeiSroWfxgomuA" version="Latest" type="property"/>
       <relatedItems xmi:id="_LqhEw1l3EeiSroWfxgomuA" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_LqhExFl3EeiSroWfxgomuA" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_LqhExVl3EeiSroWfxgomuA" id="Relational" version="Latest" type="routine"/>
@@ -925,7 +924,6 @@
       <relatedItems xmi:id="_LqhEyll3EeiSroWfxgomuA" id="TalendDataGenerator" version="Latest" type="routine"/>
       <relatedItems xmi:id="_LqhEy1l3EeiSroWfxgomuA" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_LqhEzFl3EeiSroWfxgomuA" id="Mathematical" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_LqhEzVl3EeiSroWfxgomuA" id="_8xNl4FjAEeiSroWfxgomuA - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_daqFkFl3EeiSroWfxgomuA">
       <baseItem xmi:id="_daqFkVl3EeiSroWfxgomuA" id="_dYSuEFl3EeiSroWfxgomuA" version="0.1" type="job"/>
