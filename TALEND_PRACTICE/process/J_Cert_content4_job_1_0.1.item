@@ -553,9 +553,9 @@
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
     <elementParameter field="TABLE" name="INTABLE">
-      <elementValue elementRef="key" value="Error_flname"/>
+      <elementValue elementRef="key" value="&quot;Error_flname&quot;"/>
       <elementValue elementRef="value" value="((String)globalMap.get(&quot;tFileOutputDelimited_5_FILE_NAME&quot;))"/>
-      <elementValue elementRef="key" value="Error_records"/>
+      <elementValue elementRef="key" value="&quot;Error_records&quot;"/>
       <elementValue elementRef="value" value="((Integer)globalMap.get(&quot;tFileOutputDelimited_5_NB_LINE&quot;))"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
