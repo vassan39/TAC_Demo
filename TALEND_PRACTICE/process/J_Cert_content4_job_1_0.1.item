@@ -546,17 +546,17 @@
     <elementParameter field="TEXT" name="NB_ROWS" value="2"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Key"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
       <elementValue elementRef="VALUE" value="Error_file_nm"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Value"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
       <elementValue elementRef="VALUE" value=""/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
     <elementParameter field="TABLE" name="INTABLE">
-      <elementValue elementRef="Key" value="Error_File_nm"/>
-      <elementValue elementRef="Value" value="((String)globalMap.get(&quot;tFileOutputDelimited_5_FILE_NAME&quot;))"/>
-      <elementValue elementRef="Key" value="Error_records"/>
-      <elementValue elementRef="Value" value="((Integer)globalMap.get(&quot;tFileOutputDelimited_5_NB_LINE&quot;))"/>
+      <elementValue elementRef="key" value="Error_File_nm"/>
+      <elementValue elementRef="value" value="((String)globalMap.get(&quot;tFileOutputDelimited_5_FILE_NAME&quot;))"/>
+      <elementValue elementRef="key" value="Error_records"/>
+      <elementValue elementRef="value" value="((Integer)globalMap.get(&quot;tFileOutputDelimited_5_NB_LINE&quot;))"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -564,8 +564,8 @@
     <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFixedFlowInput_1">
-      <column comment="" key="false" length="255" name="Key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Value" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="value" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="128">
